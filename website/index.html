@@ -18,6 +18,7 @@
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -29,7 +30,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand" href="#page-top">Recovery Road</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -40,10 +41,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="#video">Video</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#services">Services</a>
+                        <a href="#characters">Characters</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
@@ -62,17 +63,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <h1>Landing Page</h1>
-                        <h3>A Template by Start Bootstrap</h3>
+                        <h1>Recovery Road Logo</h1>
+                        <h3>This is where our lovely tagline goes</h3>
                         <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li><a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                            </li>
-                            <li><a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                            </li>
-                            <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -83,22 +76,78 @@
     </div>
     <!-- /.intro-header -->
 
-    <section id="about" class="about-section">
+    <section id="video" class="video-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>About Section</h1>
+                    <h1>Video Section</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <video id="video" class="video-js vjs-default-skin" controls preload="auto" width="640" height="264" poster="http://video-js.zencoder.com/oceans-clip.png" data-setup='{"example_option":true}'>
+                            <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                        </video>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="services-section">
+    <section id="characters" class="characters-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>Services Section</h1>
+                <h2>Characters Section</h2>
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/171x180">
+                        <div class="caption">
+                            <h3>Character Name</h3>
+                            <p>Character bio lalalalalala</p>
+                            <button class="btn btn-defalt" data-toggle="modal" data-target="#character1">
+                                Read More...
+                            </button>
+                        </div>
+                    </div>
                 </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/171x180">
+                        <div class="caption">
+                            <h3>Character Name</h3>
+                            <p>Character bio lalalalalala</p>
+                            <button class="btn btn-defalt" data-toggle="modal" data-target="#character2">
+                                Read More...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/171x180">
+                        <div class="caption">
+                            <h3>Character Name</h3>
+                            <p>Character bio lalalalalala</p>
+                            <button class="btn btn-defalt" data-toggle="modal" data-target="#character3">
+                                Read More...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/171x180">
+                        <div class="caption">
+                            <h3>Character Name</h3>
+                            <p>Character bio lalalalalala</p>
+                            <button class="btn btn-defalt" data-toggle="modal" data-target="#character4">
+                                Read More...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -113,6 +162,69 @@
         </div>
     </section>
 
+
+    <!-- Character 1 Modal -->
+    <div class="modal fade" id="character1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Character Name 1</h4>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Character 2 Modal -->
+    <div class="modal fade" id="character2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Character Name 2</h4>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Character 3 Modal -->
+    <div class="modal fade" id="character3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Character Name 3</h4>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Character 4 Modal -->
+    <div class="modal fade" id="character4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Character Name 4</h4>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
     <!-- Core JavaScript Files -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -120,6 +232,13 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/scrolling-nav.js"></script>
+
+    <!-- Video js -->
+    <link href="css/video-js.css" rel="stylesheet">
+    <script src="js/video.js"></script>
+    <script>
+        videojs.options.flash.swf = "http://example.com/path/to/video-js.swf"
+    </script>
 
 </body>
 
