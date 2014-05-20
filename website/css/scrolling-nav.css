@@ -74,25 +74,27 @@ of those sections to manage the look and feel of the site. */
 
 .intro-section {
     min-height: 100%;
-    padding-top: 60px;
+    padding-top: 50px;
     text-align: center;
     background: #fff;
 }
 .video-section {
-    min-height: 100%;
-    padding-top: 60px;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 60px;
     text-align: center;
     background: #eee;
 }
 .characters-section {
-    min-height: 100%;
-    padding-top: 60px;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 60px;
     text-align: center;
     background: #fff;
 }
 .contact-section {
     min-height: 100%;
-    padding-top: 60px;
+    padding-top: 50px;
     text-align: center;
     background: #eee;
 }
@@ -102,4 +104,11 @@ of those sections to manage the look and feel of the site. */
 video {
     width: 100%;
     margin: 10px;
+}
+.episode-list {
+    text-align: left;
+}
+#episode-list-top {
+   border-top: 1px solid grey;
+    padding-top: 10px; 
 }
