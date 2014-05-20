@@ -7,13 +7,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Start Bootstrap - Scrolling Nav</title>
+    <title>Recovery Road</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet" type="text/css">
+
+    <!-- Video.js CSS -->
+    <link href="css/video-js.css" rel="stylesheet">
 
 </head>
 
@@ -59,7 +62,6 @@
     <div id="intro" class="intro-header">
 
         <div class="container">
-
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
@@ -69,12 +71,13 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <!-- /.container -->
 
     </div>
     <!-- /.intro-header -->
+    
+    <!-- Video Section -->
 
     <section id="video" class="video-section">
         <div class="container">
@@ -84,16 +87,18 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <video id="video" class="video-js vjs-default-skin" controls preload="auto" width="640" height="264" poster="http://video-js.zencoder.com/oceans-clip.png" data-setup='{"example_option":true}'>
-                            <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
-                            <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
-                            <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                        <video id='video-player' preload='metadata' controls poster="images/poster.jpg">
+                            <source src=".../assets/videos/oceans-clip.mp4" type="video/mp4">
+                                <source src=".../assets/videos/oceans-clip.webm" type="video/webm">
+                                    <source src=".../assets/videos/oceans-clip.ogv" type="video/ogg">
                         </video>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- Character Section -->
 
     <section id="characters" class="characters-section">
         <div class="container">
@@ -152,11 +157,13 @@
         </div>
     </section>
 
+    <!-- Last Section needs a name or something to go here -->
+    
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Contact Section</h1>
+                    <h1>Some other section for something</h1>
                 </div>
             </div>
         </div>
@@ -233,11 +240,26 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/scrolling-nav.js"></script>
 
-    <!-- Video js -->
-    <link href="css/video-js.css" rel="stylesheet">
-    <script src="js/video.js"></script>
+    <!-- Responsive video player code -->
     <script>
-        videojs.options.flash.swf = "http://example.com/path/to/video-js.swf"
+        $(document).ready(function(){
+            var video = $("#video-player");
+            var windowObj = $(window);
+            function onResizeWindow() {
+                resizeVideo(video[0]);
+            }
+            function onLoadMetaData(e) {
+                resizeVideo(e.target);
+            }
+            function resizeVideo(videoObject) {
+                var percentWidth = videoObject.clientWidth * 100 / videoObject.videoWidth;
+                var videoHeight = videoObject.videoHeight * percentWidth / 100;
+                video.height(videoHeight);
+            }
+            video.on("loadedmetadata", onLoadMetaData);
+            windowObj.resize(onResizeWindow);
+        }
+    );
     </script>
 
 </body>
