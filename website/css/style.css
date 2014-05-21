@@ -80,15 +80,13 @@ of those sections to manage the look and feel of the site. */
 }
 .video-section {
     height: auto;
-    padding-top: 50px;
-    padding-bottom: 60px;
+    padding: 50px 0 60px 0;
     text-align: center;
     background: #eee;
 }
 .characters-section {
     height: auto;
-    padding-top: 50px;
-    padding-bottom: 60px;
+    padding: 50px 0 60px 0;
     text-align: center;
     background: #fff;
 }
@@ -98,7 +96,6 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     background: #eee;
 }
-
 /* VIDEO SECTION */
 
 video {
@@ -109,12 +106,29 @@ video {
     text-align: left;
 }
 #episode-list-top {
-   border-top: 1px solid grey;
-    padding-top: 10px; 
+    border-top: 1px solid grey;
+    padding-top: 10px;
 }
 
 /* Top splash */
 
 #toplogo {
     width: 65%;
+}
+
+
+
+/* Navbar Styles */
+
+.navbar {
+    background: rgba(0,0,0,0.7)  !important;
+    border-bottom: none;
+}
+
+.navbar:hover {
+    background: rgba(0,0,0,1);
+}
+
+.nav li a {
+    color: white;
 }
