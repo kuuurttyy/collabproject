@@ -112,3 +112,9 @@ video {
    border-top: 1px solid grey;
     padding-top: 10px; 
 }
+
+/* Top splash */
+
+#toplogo {
+    width: 65%;
+}
