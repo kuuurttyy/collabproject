@@ -20,6 +20,13 @@ body {
     width: 90%;
     max-width: 850px;
 }
+
+#tagline {
+    font-family: 'Satisfy', cursive;
+    letter-spacing: 2px;
+}
+
+
 /* Side Menu */
 
 #sidebar-wrapper {
