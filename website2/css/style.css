@@ -207,11 +207,15 @@ i.scroll:hover {
 /* social media*/
 
 .fa-facebook:hover{
- color: rgba(59, 89, 152, .7);
+ color: rgb(59, 89, 152);
 }
 
 .fa-twitter:hover{
- color: rgba(0, 172, 237, .7);
+ color: rgb(0, 172, 237);
+}
+
+.fa-youtube:hover{
+ color: rgb(205, 32, 31);
 }
 
 /* Responsive */
