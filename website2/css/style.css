@@ -202,6 +202,18 @@ i.scroll {
 i.scroll:hover {
     color: #0a5175;
 }
+
+
+/* social media*/
+
+.fa-facebook:hover{
+ color: rgba(59, 89, 152, .7);
+}
+
+.fa-twitter:hover{
+ color: rgba(0, 172, 237, .7);
+}
+
 /* Responsive */
 
 @media (max-width: 768px) {
