@@ -206,6 +206,15 @@ i.scroll:hover {
 
 /* social media*/
 
+.fa-facebook, .fa-twitter, .fa-youtube {
+    color: rgb(54,54,54);
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
 .fa-facebook:hover{
  color: rgb(59, 89, 152);
 }
