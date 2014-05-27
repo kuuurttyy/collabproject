@@ -5,6 +5,8 @@ body {
     height: 100%;
     width: 100%;
 }
+
+/* Splash page */ 
 .vert-text {
     display: table-cell;
     vertical-align: middle;
@@ -20,10 +22,12 @@ body {
     width: 90%;
     max-width: 850px;
 }
-
+#toplogo {
+    margin: 0 auto;
+}
 #tagline {
     font-family: 'Satisfy', cursive;
-    letter-spacing: 2px;
+    font-size: 48px;
 }
 
 
@@ -202,12 +206,12 @@ i.scroll:hover {
     .callout {
         background: url(../img/callout.jpg) no-repeat center center scroll;
     }
+    #tagline {
+        font-size: 32px;
+    }
     #episode-list {
         margin-top: 25px;
         margin-left: 5px;
         margin-right: 5px;
     }
-}
-#toplogo {
-    margin: 0 auto;
 }
