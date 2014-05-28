@@ -132,6 +132,7 @@ video {
 }
 #episode-list {
     margin-top: 50px;
+    margin-left: 15px;
 }
 
 /* Characters */
@@ -147,7 +148,7 @@ video {
 }
 
 .thumbnail{
-    padding: 14px;
+    padding-top: 14px;
 }
 
 /* Callout */
@@ -187,10 +188,10 @@ video {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 10px 0;
 }
 .top-scroll {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .top-scroll a {
     text-decoration: none;
@@ -244,4 +245,54 @@ i.scroll:hover {
         margin-left: 5px;
         margin-right: 5px;
     }
+}
+
+
+
+
+/* Masonry Gallery */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.masonry {
+    background: #EEE;
+    max-width: 95%;
+    margin: 0 auto;
+}
+/* clearfix */
+
+.masonry:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.masonry .item {
+    width: 25%;
+    height: auto;
+    float: left;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+.item.w2 {
+    width: 50%;
+}
+.item.gigante {
+    width: 75%;
+    height: auto;
+}
+.item:hover {
+    background: #A2C;
+    border-color: white;
+    cursor: pointer;
+}
+
+.item img {
+    height: 100%;
+    width: 100%;
 }
