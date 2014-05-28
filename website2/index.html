@@ -16,23 +16,23 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
-    
+
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-<link rel="icon" type="image/png" href="img/favicons/favicon-196x196.png" sizes="196x196">
-<link rel="icon" type="image/png" href="img/favicons/favicon-160x160.png" sizes="160x160">
-<link rel="icon" type="image/png" href="img/favicons/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
-<meta name="msapplication-TileColor" content="#2b5797">
-<meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
 </head>
 
 <body>
@@ -47,7 +47,7 @@
                 <i class="fa fa-times"></i>
             </a>
             <li class="sidebar-brand">
-                <a href="http://startbootstrap.com">Recovery Road</a>
+                <a href="index.html">Recovery Road</a>
             </li>
             <li>
                 <a href="#top">Home</a>
@@ -183,7 +183,7 @@
 
     <!-- Callout -->
     <div class="callout">
-        <div class="vert-text">
+        <div class="vert-text2">
             <h1>Behind The Scenes</h1>
         </div>
     </div>
@@ -222,8 +222,8 @@
                     <img src="img/characters/img27.jpg" class="item w2">
                     <img src="img/characters/img28.jpg" class="item w2">
                     <img src="img/characters/img29.jpg" class="item w2">
-                    
-                    
+
+
                 </div>
             </div>
         </div>
@@ -328,25 +328,35 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/classie.js"></script>
+    <script src="js/imagesloaded.js"></script>
+
+    <!-- load masonry images first -->
+    <script>
+        var $container = $('.masonry');
+         // initialize Masonry after all images have loaded  
+        $container.imagesLoaded(function () {
+            $container.masonry();
+        });
+    </script>
 
     <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
     <script>
-        $("#menu-close").click(function(e) {
+        $("#menu-close").click(function (e) {
             e.preventDefault();
             $("#sidebar-wrapper").toggleClass("active");
         });
     </script>
     <script>
-        $("#menu-toggle").click(function(e) {
+        $("#menu-toggle").click(function (e) {
             e.preventDefault();
             $("#sidebar-wrapper").toggleClass("active");
         });
     </script>
     <script>
-        $(function() {
-            $('a[href*=#]:not([href=#])').click(function() {
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-    
+
                     var target = $(this.hash);
                     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                     if (target.length) {
@@ -361,30 +371,32 @@
     </script>
     <!-- Responsive video player code -->
     <script>
-            $(document).ready(function(){
-                var video = $("#video-player");
-                var windowObj = $(window);
-                function onResizeWindow() {
-                    resizeVideo(video[0]);
-                }
-                function onLoadMetaData(e) {
-                    resizeVideo(e.target);
-                }
-                function resizeVideo(videoObject) {
-                    var percentWidth = videoObject.clientWidth * 100 / videoObject.videoWidth;
-                    var videoHeight = videoObject.videoHeight * percentWidth / 100;
-                    video.height(videoHeight);
-                }
-                video.on("loadedmetadata", onLoadMetaData);
-                windowObj.resize(onResizeWindow);
+        $(document).ready(function () {
+            var video = $("#video-player");
+            var windowObj = $(window);
+
+            function onResizeWindow() {
+                resizeVideo(video[0]);
             }
-        );
+
+            function onLoadMetaData(e) {
+                resizeVideo(e.target);
+            }
+
+            function resizeVideo(videoObject) {
+                var percentWidth = videoObject.clientWidth * 100 / videoObject.videoWidth;
+                var videoHeight = videoObject.videoHeight * percentWidth / 100;
+                video.height(videoHeight);
+            }
+            video.on("loadedmetadata", onLoadMetaData);
+            windowObj.resize(onResizeWindow);
+        });
     </script>
     <script>
         docReady(function () {
             var container = document.querySelector('.masonry');
             var msnry = new Masonry(container, {
-               "itemSelector": ".item" 
+                "itemSelector": ".item"
             });
             eventie.bind(container, 'click', function (event) {
                 // don't proceed if item was not clicked on
