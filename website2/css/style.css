@@ -153,7 +153,9 @@ video {
 }
 .modal-dialog {
     /* Moves the modals down closer to the center of the page */
-    padding-top: 15%;
+    margin-top: 10%;
+    max-height: 80%;
+    overflow-y: scroll;
 }
 .thumbnail {
     padding-top: 14px;
@@ -165,7 +167,7 @@ video {
     display: table;
     height: 400px;
     width: 100%;
-    background: url(../img/callout.jpg) no-repeat center center fixed;
+    background: url(../img/bg1blur.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -271,12 +273,12 @@ i.scroll:hover {
 /* Responsive */
 
 @media (max-width: 768px) {
-    .header {
+    /* .header {
         background: url(../img/bg1.jpg) no-repeat center center scroll;
     }
     .callout {
         background: url(../img/callout.jpg) no-repeat center center scroll;
-    }
+    } */
     #tagline {
         font-size: 32px;
     }
@@ -294,4 +296,10 @@ i.scroll:hover {
     .item.gigante {
         width: 100%;
     }
+}
+
+
+audio {
+    width: 171px;
+    border-radius: none;
 }
