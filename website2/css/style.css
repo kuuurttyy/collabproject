@@ -4,6 +4,7 @@ html,
 body {
     height: 100%;
     width: 100%;
+    font-size: 16px;
 }
 /* Splash page */
 
@@ -291,6 +292,7 @@ i.scroll:hover {
 .fa-youtube:hover {
     color: rgb(205, 32, 31);
 }
+
 /* Responsive */
 
 @media (max-width: 768px) {
@@ -315,10 +317,15 @@ i.scroll:hover {
     .item.gigante {
         width: 100%;
     }
+    html, body {
+        font-size: 14px;
+}
+    }
 }
 
 
 audio {
     width: 171px;
     border-radius: none;
+    display: block;
 }
