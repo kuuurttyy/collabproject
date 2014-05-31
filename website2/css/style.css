@@ -161,7 +161,25 @@ video {
     overflow-y: scroll;
 }
 .thumbnail {
-    padding-top: 14px;
+    padding-top: 14px;  
+}
+.thumbnail img {
+    border-radius: 5px;
+}
+.thumbnail img:hover {
+    cursor: pointer;
+}
+.thumbnail button {
+    background-color: #ccc;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.thumbnail button:hover {
+    background-color: #3276b1;
+    color: white;
 }
 /* Callout */
 
@@ -226,7 +244,7 @@ video {
 }
 .item:hover {
     background: #A2C;
-    border-color: white;
+    border-color: black;
     cursor: pointer;
 }
 .item img {
