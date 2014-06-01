@@ -4,7 +4,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-    font-size: 16px;
+    <!-- font-size: 16px; -->
 }
 /* Splash page */
 
@@ -134,13 +134,13 @@ body {
 /* Video */
 
 .Video {
-    padding: 50px 0;
+    padding: 1% 0;
 }
 video {
     max-width: 1280px;
     max-height: 720px;
     height: auto;
-    width: 100%;
+    width: 95%;
     margin: 0;
     margin-top: 50px
 }
@@ -257,6 +257,7 @@ video {
 
 footer {
     padding: 10px 0;
+    font-size: 12px;
 }
 .top-scroll {
     margin-top: 10px;
