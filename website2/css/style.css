@@ -326,7 +326,7 @@ i.scroll:hover {
 
 
 audio {
-    width: 171px;
+    width: 171px !important; 
     border-radius: none;
     display: block;
 }
