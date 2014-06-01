@@ -4,6 +4,7 @@ html,
 body {
     height: 100%;
     width: 100%;
+    font-size: 16px;
 }
 /* Splash page */
 
@@ -48,7 +49,7 @@ body {
     margin-right: -250px;
     right: 0;
     width: 250px;
-    background: #000;
+    background: rgba(0,0,0,0.8);
     position: fixed;
     height: 100%;
     overflow-y: auto;
@@ -75,6 +76,7 @@ body {
     color: #999999;
     display: block;
     text-decoration: none;
+    text-align: center;
 }
 .sidebar-nav li a:hover {
     color: #fff;
@@ -102,6 +104,7 @@ body {
     right: 0;
     position: fixed;
     z-index: 1;
+    background-color: ;
 }
 #sidebar-wrapper.active {
     right: 250px;
@@ -139,6 +142,7 @@ video {
     height: auto;
     width: 100%;
     margin: 0;
+    margin-top: 50px
 }
 #episode-list {
     margin-top: 50px;
@@ -147,7 +151,7 @@ video {
 /* Characters */
 
 .charactersection {
-    background: #7fbbda;
+    background: #222;
     padding: 50px 0;
     color: #ffffff;
 }
@@ -158,7 +162,25 @@ video {
     overflow-y: scroll;
 }
 .thumbnail {
-    padding-top: 14px;
+    padding-top: 14px;  
+}
+.thumbnail img {
+    border-radius: 5px;
+}
+.thumbnail img:hover {
+    cursor: pointer;
+}
+.thumbnail button {
+    background-color: #ccc;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.thumbnail button:hover {
+    background-color: #3276b1;
+    color: white;
 }
 /* Callout */
 
@@ -223,7 +245,7 @@ video {
 }
 .item:hover {
     background: #A2C;
-    border-color: white;
+    border-color: black;
     cursor: pointer;
 }
 .item img {
@@ -270,6 +292,7 @@ i.scroll:hover {
 .fa-youtube:hover {
     color: rgb(205, 32, 31);
 }
+
 /* Responsive */
 
 @media (max-width: 768px) {
@@ -294,10 +317,15 @@ i.scroll:hover {
     .item.gigante {
         width: 100%;
     }
+    html, body {
+        font-size: 14px;
+}
+    }
 }
 
 
 audio {
     width: 171px;
     border-radius: none;
+    display: block;
 }
