@@ -125,7 +125,7 @@ body {
     height: 100%;
     width: 100%;
     position: relative;
-    background: url(../img/bg1.jpg) no-repeat center center fixed !important;
+    /*background: url(../img/bg1.jpg) no-repeat center center fixed !important; */
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
@@ -190,7 +190,7 @@ video {
     display: table;
     height: 400px;
     width: 100%;
-    background: url(../img/bg1blur.jpg) no-repeat center center fixed !important;
+    /* background: url(../img/bg1blur.jpg) no-repeat center center fixed !important; */
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
