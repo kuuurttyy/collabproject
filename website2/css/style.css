@@ -158,8 +158,9 @@ video {
 }
 .modal-dialog {
     /* Moves the modals down closer to the center of the page */
-    margin-top: 10%;
+    margin-top: 5%;
     max-height: 80%;
+    margin-bottom: 5%;
     overflow-y: scroll;
 }
 .thumbnail {
@@ -183,6 +184,20 @@ video {
     background-color: #3276b1;
     color: white;
 }
+
+/* Twitter Feed */
+.twitterFeed {
+    background: #eee;
+    padding: 50px 0;
+}
+
+iframe[id^='twitter-widget-']{ width:100% !important;}
+
+.twitter-timeline {
+    margin: 0 auto;
+    width: 700px;
+}
+
 /* Callout */
 
 .callout {
