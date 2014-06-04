@@ -339,9 +339,9 @@ i.scroll:hover {
     html, body {
         font-size: 14px;
     }
-    iframe[id^='twitter-widget-']{ 
-    width: 90% !important;
-    }
+    .twitterFeed {                 /* hide twitter feed on mobile as it isnt responsive */
+    display: none;
+}
 }
 
 
