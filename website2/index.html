@@ -37,6 +37,19 @@
 
 <body>
 
+    <!-- facebook like button stuff -->
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=164241650331136&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <!-- Side Menu -->
     <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle">
         <i class="fa fa-bars"></i>
@@ -53,7 +66,7 @@
                 <a href="#top">Home</a>
             </li>
             <li>
-                <a href="#videosection">Videos</a>
+                <a href="#videosection">Episodes</a>
             </li>
             <li>
                 <a href="#charactersection">Characters</a>
@@ -86,6 +99,9 @@
                         <source src="video/VideoTest.ogv" type='video/ogg' />
                     </video>
                     <h1>Episode 1: Road to Recovery</h1>
+                    <p>
+                        <div class="fb-like" data-href="http://kurtstubbings.com/collabproject/" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+                    </p>
                 </div>
             </div>
             <div class="row" id="episode-list">
@@ -137,7 +153,7 @@
 
         </div>
     </div>
-    <!-- /Intro -->
+    <!-- /Video Section -->
 
 
 
@@ -231,8 +247,9 @@
             </div>
         </div>
     </div>
+    <!-- End of twitter feed -->
 
-    <!-- Callout -->
+    <!-- Callout title -->
     <div class="callout">
         <div class="vert-text2">
             <h1>Behind The Scenes</h1>
@@ -240,7 +257,7 @@
     </div>
     <!-- /Callout -->
 
-    <!-- Portfolio -->
+    <!-- Behind the Scenes Gallery -->
     <div id="portfolio" class="portfolio">
         <div class="container text-center">
             <div class="row">
@@ -277,7 +294,7 @@
             </div>
         </div>
     </div>
-    <!-- /Portfolio -->
+    <!-- /Behind the scenes -->
 
     <!-- Footer -->
     <footer>

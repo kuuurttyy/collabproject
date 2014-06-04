@@ -192,7 +192,7 @@ video {
 }
 
 iframe[id^='twitter-widget-']{ 
-    width: 75% !important;
+    width: 80% !important;
 }
 
 .twitter-timeline {
@@ -338,7 +338,9 @@ i.scroll:hover {
     }
     html, body {
         font-size: 14px;
-}
+    }
+    iframe[id^='twitter-widget-']{ 
+    width: 90% !important;
     }
 }
 
